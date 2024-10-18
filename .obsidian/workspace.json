@@ -11,10 +11,14 @@
             "id": "b3dfb478ee334a58",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "12306.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "12306"
             }
           }
         ]
@@ -187,8 +191,8 @@
   },
   "active": "b3dfb478ee334a58",
   "lastOpenFiles": [
-    "未命名.canvas",
     "八股.md",
+    "未命名.canvas",
     "12306.md",
     "短链接.md",
     "Excalidraw/Drawing 2024-10-18 11.43.31.excalidraw.md",
