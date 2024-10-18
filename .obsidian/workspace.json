@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "735ff0c76c3a2144",
+        "id": "2b3de0f11e737edd",
         "type": "tabs",
         "children": [
           {
-            "id": "7db86d98737e1adc",
+            "id": "9ee0c0f36c83b8d5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -168,7 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 599.5
+    "width": 441.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,6 +187,7 @@
   },
   "active": "e19ffc793afb0516",
   "lastOpenFiles": [
+    "未命名.canvas",
     "八股.md",
     "12306.md",
     "短链接.md",
