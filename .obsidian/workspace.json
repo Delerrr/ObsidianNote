@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2b3de0f11e737edd",
+        "id": "08b5776088f71df4",
         "type": "tabs",
         "children": [
           {
-            "id": "9ee0c0f36c83b8d5",
+            "id": "b3dfb478ee334a58",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -185,7 +185,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2232ed75ecd44579",
+  "active": "b3dfb478ee334a58",
   "lastOpenFiles": [
     "未命名.canvas",
     "八股.md",
