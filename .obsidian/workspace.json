@@ -139,9 +139,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Java.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Java 的大纲"
             }
           },
           {
@@ -164,12 +169,12 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -193,8 +198,13 @@
   },
   "active": "4a934cca5eccde17",
   "lastOpenFiles": [
-    "Pasted image 20250621231404.png",
+    "BackendLearn/杂记.md",
+    "BackendLearn/一些后端项目参考.md",
+    "BackendLearn/面经.md",
+    "BackendLearn/八股.md",
+    "BackendLearn/短链接.md",
     "Java.md",
+    "Pasted image 20250621231404.png",
     "Pasted image 20250621231559.png",
     "未命名",
     "八股.md",
