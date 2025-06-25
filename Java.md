@@ -27,10 +27,36 @@ public interface MyInterface {
 
 Java 8 引入的`static` 方法无法在实现类中被覆盖，只能通过接口名直接调用（ `MyInterface.staticMethod()`），类似于类中的静态方法。`static` 方法通常用于定义一些通用的、与接口相关的工具方法，一般很少用。
 
-```
+```java
 public interface MyInterface {
     static void staticMethod() {
         System.out.println("This is a static method in the interface.");
+    }
+}
+```
+
+Java 9 允许在接口中使用 `private` 方法。`private`方法可以用于在接口内部共享代码，不对外暴露。
+
+```java
+public interface MyInterface {
+    // default 方法
+    default void defaultMethod() {
+        commonMethod();
+    }
+
+    // static 方法
+    static void staticMethod() {
+        commonMethod();
+    }
+
+    // 私有静态方法，可以被 static 和 default 方法调用
+    private static void commonMethod() {
+        System.out.println("This is a private method used internally.");
+    }
+
+      // 实例私有方法，只能被 default 方法调用。
+    private void instanceCommonMethod() {
+        System.out.println("This is a private instance method used internally.");
     }
 }
 ```
