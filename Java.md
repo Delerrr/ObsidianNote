@@ -60,3 +60,17 @@ public interface MyInterface {
     }
 }
 ```
+
+## 一些`Unchecked Exception`
+
+`RuntimeException` 及其子类都统称为非受检查异常，常见的有（建议记下来，日常开发中会经常用到）：
+
+- `NullPointerException`(空指针错误)
+- `IllegalArgumentException`(参数错误比如方法入参类型错误)
+- `NumberFormatException`（字符串转换为数字格式错误，`IllegalArgumentException`的子类）
+- `ArrayIndexOutOfBoundsException`（数组越界错误）
+- `ClassCastException`（类型转换错误）
+- `ArithmeticException`（算术错误）
+- `SecurityException` （安全错误比如权限不够）
+- `UnsupportedOperationException`(不支持的操作错误比如重复创建同一用户)
+- ……
