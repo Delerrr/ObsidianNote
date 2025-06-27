@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "BackendLearn/八股.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "八股"
+            }
+          },
+          {
+            "id": "92ba8ad75ccad9f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Java.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +35,8 @@
               "title": "Java"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,17 +210,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4a934cca5eccde17",
+  "active": "92ba8ad75ccad9f2",
   "lastOpenFiles": [
+    "BackendLearn/八股.md",
+    "Java.md",
+    "BackendLearn/杂记.md",
     "Pasted image 20250627211742.png",
     "Pasted image 20250627204128.png",
     "Pasted image 20250621231404.png",
     "Pasted image 20250621231559.png",
-    "Java.md",
-    "BackendLearn/杂记.md",
     "BackendLearn/一些后端项目参考.md",
     "BackendLearn/面经.md",
-    "BackendLearn/八股.md",
     "BackendLearn/短链接.md",
     "未命名",
     "八股.md",
@@ -224,7 +239,6 @@
     "FILES/杂记.md/img-20241018104549.png",
     "FILES/杂记.md/img-20241018104505.png",
     "FILES/杂记.md",
-    "FILES/八股.md/img-20241018111015.png",
     "FILES/八股.md",
     "FILES/12306.md",
     "FILES",

@@ -115,9 +115,17 @@ StringBuffer线程安全（所有公共方法（如 append、insert 等）都使
     - HashMap 的初始长度为 16，之后每次扩充变为原来的两倍（位与）
 
 5. ### **对外提供的接口**不同
+
+- Hashtable比HashMap多提供了elments() 和contains() 两个方法。
 	
-	- Hashtable比HashMap多提供了elments() 和contains() 两个方法。
-	    
-	- elements() 返回此Hashtable中的value的枚举
-	    
-	- contains(V) 判断该Hashtable是否包含传入的value。作用与hashtable的containsValue()一致
+- elements() 返回此Hashtable中的value的枚举
+	
+- contains(V) 判断该Hashtable是否包含传入的value。作用与hashtable的containsValue()一致
+
+## Hashtable不允许有 null 键和null值,否则会抛出NullPointerException
+
+原因：
+
+1.  null键：null作为键，无法使用hashcode和equals方法，所以不好
+
+2.  null值：会出现二义性：首先通过contains(key)返回true，在get之前，另一个线程删除了value，于是get到了null，这时就无法判断是原本就是null还是因为不存在而返回的null
