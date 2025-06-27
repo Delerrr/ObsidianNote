@@ -177,3 +177,5 @@ StringBuffer线程安全（所有公共方法（如 append、insert 等）都使
 - compose：表示“先执行 g，再将结果传给 f”，即 f(g(x))。这符合数学中函数组合的习惯（从右到左）。
 - andThen：表示“先执行 f，再将结果传给 g”，即 g(f(x))。这更符合程序员直觉的“先做这个，再做那个”的顺序。
 
+## BigDecimal 等值比较问题
+![[Pasted image 20250627222335.png]]
