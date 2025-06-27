@@ -83,8 +83,41 @@ Collection类图
 ## StringBuffer和StringBuilder
 
 ![[Pasted image 20250627211742.png]]
-StringBuffer
+StringBuffer线程安全（所有公共方法（如 append、insert 等）都使用 synchronized 关键字进行同步），StringBuilder线程不安全但速度快一些
 ## HashMap和Hashtable
-- HashMap 在多线程并发的环境下，线程是不安全的,效率远远高于Hashtable
+
+1. ### 两者**父类**不同
     
-- Hashtable在多线程并发的环境下，线程是安全的，它的每个方法上都有synchronized 关键字
+    - HashMap是继承自AbstractMap类
+        
+    - Hashtable是继承自Dictionary类
+        
+    - 都实现了同时实现了map、Cloneable（可复制）、Serializable（可序列化）这三个接口
+
+2. ### **安全性**不同
+    
+    - HashMap 在多线程并发的环境下，线程是不安全的,效率远远高于Hashtable
+        
+    - Hashtable在多线程并发的环境下，线程是安全的，它的每个方法上都有synchronized 关键字
+    
+3. ### 对**null的支持**不同
+    
+    - HashMap允许键和值都为null，
+        
+    - Hashtable不允许键或值为null。
+        
+    - 如果尝试将null作为键或值存入Hashtable，将会抛出**NullPointerException (空指针异常)**。
+
+4. ### **初始容量大小和每次扩充容量大小**不同
+    
+    - Hashtable 的初始长度是 11，之后每次扩充容量变为之前的2n+1（n 为上一次的长度）
+        
+    - HashMap 的初始长度为 16，之后每次扩充变为原来的两倍（位与）
+
+5. ### **对外提供的接口**不同
+	
+	- Hashtable比HashMap多提供了elments() 和contains() 两个方法。
+	    
+	- elements() 返回此Hashtable中的value的枚举
+	    
+	- contains(V) 判断该Hashtable是否包含传入的value。作用与hashtable的containsValue()一致
