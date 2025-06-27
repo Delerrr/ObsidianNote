@@ -11,12 +11,14 @@
             "id": "4a934cca5eccde17",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20250627204128.png"
+                "file": "Java.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250627204128"
+              "icon": "lucide-file",
+              "title": "Java"
             }
           }
         ]
@@ -138,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20250627204128.png",
+                "file": "Java.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pasted image 20250627204128 的大纲"
+              "title": "Java 的大纲"
             }
           },
           {
@@ -195,10 +197,11 @@
   },
   "active": "4a934cca5eccde17",
   "lastOpenFiles": [
+    "Pasted image 20250627211742.png",
+    "Pasted image 20250627204128.png",
     "Pasted image 20250621231404.png",
     "Pasted image 20250621231559.png",
     "Java.md",
-    "Pasted image 20250627204128.png",
     "BackendLearn/杂记.md",
     "BackendLearn/一些后端项目参考.md",
     "BackendLearn/面经.md",

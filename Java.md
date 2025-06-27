@@ -78,3 +78,13 @@ public interface MyInterface {
 Collection类图
 
 ![[Pasted image 20250627204128.png]]
+
+## StringBuffer和StringBuilder, HashMap和Hashtable
+## StringBuffer和StringBuilder
+
+![[Pasted image 20250627211742.png]]
+StringBuffer
+## HashMap和Hashtable
+- HashMap 在多线程并发的环境下，线程是不安全的,效率远远高于Hashtable
+    
+- Hashtable在多线程并发的环境下，线程是安全的，它的每个方法上都有synchronized 关键字
