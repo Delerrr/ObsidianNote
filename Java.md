@@ -131,3 +131,26 @@ StringBuffer线程安全（所有公共方法（如 append、insert 等）都使
 2.  null值：会出现二义性：
 	1. 情形一：首先通过contains(key)返回true，在get之前，另一个线程删除了value，于是get到了null，这时就无法判断是原本就是null还是因为不存在而返回的null
 	2. 情形二：线程A看到get(key) == null并认为键不存在，尝试插入新值，但线程B可能同时将key的值设置为null，导致逻辑混乱
+
+## Function使用技巧
+
+在Java中，使用`@FunctionalInterface`注解来标识一个接口为函数式接口。函数式接口是指只包含一个抽象方法的接口。
+
+1. 链式调用
+    
+      `Function` 接口的 `andThen()` 方法可以将多个函数连接在一起形成一个链式调用。这种方式可以使代码更加清晰和简洁。
+    
+    ```Java
+    import java.util.function.Function;
+    
+    public class Example {
+        public static void main(String[] args) {
+            Function<Integer, Integer> add = x -> x + 2;
+            Function<Integer, Integer> multiply = x -> x * 3;
+    
+            // 先加2再乘3
+            Function<Integer, Integer> addAndMultiply = add.andThen(multiply);
+            System.out.println(addAndMultiply.apply(5)); // 输出为21
+        }
+    }
+    ```
