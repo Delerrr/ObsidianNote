@@ -136,7 +136,7 @@ StringBuffer线程安全（所有公共方法（如 append、insert 等）都使
 
 在Java中，使用`@FunctionalInterface`注解来标识一个接口为函数式接口。函数式接口是指只包含一个抽象方法的接口。
 
-1. 链式调用
+1. andThen和compose
     
       `Function` 接口的 `andThen()` 方法可以将多个函数连接在一起形成一个链式调用。这种方式可以使代码更加清晰和简洁。
     
@@ -154,4 +154,26 @@ StringBuffer线程安全（所有公共方法（如 append、insert 等）都使
         }
     }
     ```
+    
+      `Function` 接口的 `compose()` 方法可以将多个函数组合起来形成一个新的函数。这种方式可以在不改变原有函数的情况下创建新的函数。
+    
+    ```Java
+    import java.util.function.Function;
+    
+    public class Example {
+        public static void main(String[] args) {
+            Function<Integer, Integer> add = x -> x + 2;
+            Function<Integer, Integer> multiply = x -> x * 3;
+    
+            // 先乘3再加2
+            Function<Integer, Integer> multiplyAndAdd = add.compose(multiply);
+            System.out.println(multiplyAndAdd.apply(5)); // 输出为17
+        }
+    }
+    ```
+    
+**compose** 和 **andThen** 分别对应数学中的函数组合（f ∘ g）和顺序执行的两种不同思维方式：
+
+- compose：表示“先执行 g，再将结果传给 f”，即 f(g(x))。这符合数学中函数组合的习惯（从右到左）。
+- andThen：表示“先执行 f，再将结果传给 g”，即 g(f(x))。这更符合程序员直觉的“先做这个，再做那个”的顺序。
 
