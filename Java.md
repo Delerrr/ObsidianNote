@@ -74,3 +74,7 @@ public interface MyInterface {
 - `SecurityException` （安全错误比如权限不够）
 - `UnsupportedOperationException`(不支持的操作错误比如重复创建同一用户)
 - ……
+
+Collection类图
+
+![[Pasted image 20250627204128.png]]

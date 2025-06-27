@@ -11,14 +11,12 @@
             "id": "4a934cca5eccde17",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Java.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20250627204128.png"
               },
-              "icon": "lucide-file",
-              "title": "Java"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250627204128"
             }
           }
         ]
@@ -140,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java.md",
+                "file": "Pasted image 20250627204128.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Java 的大纲"
+              "title": "Pasted image 20250627204128 的大纲"
             }
           },
           {
@@ -197,14 +195,15 @@
   },
   "active": "4a934cca5eccde17",
   "lastOpenFiles": [
+    "Pasted image 20250621231404.png",
+    "Pasted image 20250621231559.png",
+    "Java.md",
+    "Pasted image 20250627204128.png",
     "BackendLearn/杂记.md",
     "BackendLearn/一些后端项目参考.md",
     "BackendLearn/面经.md",
     "BackendLearn/八股.md",
     "BackendLearn/短链接.md",
-    "Java.md",
-    "Pasted image 20250621231404.png",
-    "Pasted image 20250621231559.png",
     "未命名",
     "八股.md",
     "未命名.canvas",
@@ -223,7 +222,6 @@
     "FILES/杂记.md/img-20241018104505.png",
     "FILES/杂记.md",
     "FILES/八股.md/img-20241018111015.png",
-    "FILES/八股.md/img-20241018111006.png",
     "FILES/八股.md",
     "FILES/12306.md",
     "FILES",
