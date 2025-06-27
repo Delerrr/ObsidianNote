@@ -128,4 +128,6 @@ StringBuffer线程安全（所有公共方法（如 append、insert 等）都使
 
 1.  null键：null作为键，无法使用hashcode和equals方法，所以不好
 
-2.  null值：会出现二义性：首先通过contains(key)返回true，在get之前，另一个线程删除了value，于是get到了null，这时就无法判断是原本就是null还是因为不存在而返回的null
+2.  null值：会出现二义性：
+	1. 情形一：首先通过contains(key)返回true，在get之前，另一个线程删除了value，于是get到了null，这时就无法判断是原本就是null还是因为不存在而返回的null
+	2. 情形二：线程A看到get(key) == null并认为键不存在，尝试插入新值，但线程B可能同时将key的值设置为null，导致逻辑混乱
