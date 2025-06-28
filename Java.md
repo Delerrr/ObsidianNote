@@ -179,3 +179,11 @@ StringBuffer线程安全（所有公共方法（如 append、insert 等）都使
 
 ## BigDecimal 等值比较问题
 ![[Pasted image 20250627222335.png]]
+
+**interrupt、 interrupted、isInterrupted 区别**
+
+- interrupt：用于中断线程，调用该方法的线程的状态为将被置为”中断”状态，设置中断标识为true
+    
+- Thread.interrupted()：查看线程的中断状态，并且清除中断信号，中断状态会被清零 静态方法
+    
+- isInterrupted：查询线程的中断状态，且不会改变中断状态标识
