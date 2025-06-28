@@ -75,7 +75,7 @@ public interface MyInterface {
 - `UnsupportedOperationException`(不支持的操作错误比如重复创建同一用户)
 - ……
 
-Collection类图
+## Collection类图
 
 ![[Pasted image 20250627204128.png]]
 
