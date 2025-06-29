@@ -187,3 +187,88 @@ StringBuffer线程安全（所有公共方法（如 append、insert 等）都使
 - Thread.interrupted()：查看线程的中断状态，并且清除中断信号，中断状态会被清零 静态方法
     
 - isInterrupted：查询线程的中断状态，且不会改变中断状态标识
+
+## Switch新特性
+
+使用switch时，如果遗漏了break，就会造成严重的逻辑错误，而且不易在源代码中发现错误。从Java 12开始，switch语句升级为更简洁的表达式语法，使用类似模式匹配（Pattern Matching）的方法，保证只有一种路径会被执行，并且不需要[break语句](https://so.csdn.net/so/search?q=break%E8%AF%AD%E5%8F%A5&spm=1001.2101.3001.7020)：
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String fruit = "apple";
+        switch (fruit) {
+        case "apple" -> System.out.println("Selected apple");
+        case "pear" -> System.out.println("Selected pear");
+        case "mango" -> {
+            System.out.println("Selected mango");
+            System.out.println("Good choice!");
+        }
+        default -> System.out.println("No fruit selected");
+        }
+    }
+}
+
+```
+
+注意新语法使用->，如果有多条语句，需要用{}括起来。不要写break语句，因为新语法只会执行匹配的语句，没有穿透效应。
+
+很多时候，我们还可能用switch语句给某个变量赋值。例如：
+
+```java
+int opt;
+switch (fruit) {
+case "apple":
+    opt = 1;
+    break;
+case "pear":
+case "mango":
+    opt = 2;
+    break;
+default:
+    opt = 0;
+    break;
+}
+```
+
+使用新的switch语法，不但不需要break，还可以直接返回值。把上面的代码改写如下：
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String fruit = "apple";
+        int opt = switch (fruit) {
+            case "apple" -> 1;
+            case "pear", "mango" -> 2;
+            default -> 0;
+        }; // 注意赋值语句要以;结束
+        System.out.println("opt = " + opt);
+    }
+}
+
+```
+
+这样可以获得更简洁的代码。
+
+**yield**
+
+大多数时候，在switch表达式内部，我们会返回简单的值。
+
+但是，如果需要复杂的语句，我们也可以写很多语句，放到{…}里，然后，用yield返回一个值作为switch语句的返回值：
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String fruit = "orange";
+        int opt = switch (fruit) {
+            case "apple" -> 1;
+            case "pear", "mango" -> 2;
+            default -> {
+                int code = fruit.hashCode();
+                yield code; // switch语句返回值
+            }
+        };
+        System.out.println("opt = " + opt);
+    }
+}
+
+```
