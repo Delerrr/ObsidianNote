@@ -272,3 +272,21 @@ public class Main {
 }
 
 ```
+
+## volatile 禁止指令重排序的例子
+
+```java
+public class ReorderExample {  
+	private int x = 0;  
+	private volatile boolean ready = false;  
+	public void writer() {  x = 42; // 语句 1  ready = true; // 语句 2  }  public void reader() {  if (ready) { // 语句 3  System.out.println(x); // 语句 4  }  }  }       `
+```
+- **没有 volatile 的情况**：
+    - 编译器或处理器可能将 writer() 中的语句 1 和语句 2 重排序，即先执行 ready = true，再执行 x = 42。
+    - 如果线程 A 执行 writer()，线程 B 执行 reader()，可能出现以下情况：
+        - 线程 B 看到 ready = true（语句 3），但 x 仍是 0（因为语句 1 还未执行）。
+        - 结果：线程 B 打印 x = 0，而不是预期的 42。
+- **使用 volatile 的情况**：
+    - volatile boolean ready 确保 ready = true（语句 2）不会被重排序到 x = 42（语句 1）之前。
+    - 同时，volatile 保证写操作的 happens-before 关系，线程 B 在看到 ready = true 时，必定能看到 x = 42。
+    - 结果：线程 B 要么不执行（因为 ready = false），要么打印 x = 42
