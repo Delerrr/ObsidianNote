@@ -279,7 +279,17 @@ public class Main {
 public class ReorderExample {  
 	private int x = 0;  
 	private volatile boolean ready = false;  
-	public void writer() {  x = 42; // 语句 1  ready = true; // 语句 2  }  public void reader() {  if (ready) { // 语句 3  System.out.println(x); // 语句 4  }  }  }       `
+	
+	public void writer() {  x = 42; // 语句 1  
+		ready = true; // 语句 2  
+	} 
+	 
+	public void reader() {  
+		if (ready) { // 语句 3  
+			System.out.println(x); // 语句 4  
+		}  
+	}  
+}
 ```
 - **没有 volatile 的情况**：
     - 编译器或处理器可能将 writer() 中的语句 1 和语句 2 重排序，即先执行 ready = true，再执行 x = 42。
