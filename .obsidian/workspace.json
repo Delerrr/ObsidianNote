@@ -27,12 +27,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "Java.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "Java"
+            }
+          },
+          {
+            "id": "9802ae5842c04d2a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/ThreadLocal三种情况.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "ThreadLocal三种情况"
             }
           },
           {
@@ -41,10 +53,10 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2025-07-25 12.13.39.excalidraw.md"
+                "file": "Excalidraw/ThreadLocal三种情况.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2025-07-25 12.13.39.excalidraw"
+              "title": "ThreadLocal三种情况"
             }
           },
           {
@@ -181,13 +193,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2025-07-25 12.13.39.excalidraw.md",
+                "file": "Excalidraw/ThreadLocal三种情况.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Drawing 2025-07-25 12.13.39.excalidraw 的大纲"
+              "title": "ThreadLocal三种情况 的大纲"
             }
           },
           {
@@ -236,12 +248,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d936ded14f196c58",
+  "active": "9802ae5842c04d2a",
   "lastOpenFiles": [
-    "未命名.md",
-    "Excalidraw/Drawing 2025-07-25 12.13.39.excalidraw.md",
-    "Excalidraw",
     "Java.md",
+    "Excalidraw/ThreadLocal三种情况.md",
+    "未命名.md",
+    "Excalidraw",
     "Pasted image 20250621231559.png",
     "BackendLearn/八股.md",
     "BackendLearn/短链接.md",
