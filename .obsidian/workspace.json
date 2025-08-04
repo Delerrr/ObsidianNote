@@ -36,34 +36,6 @@
             }
           },
           {
-            "id": "9802ae5842c04d2a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Java"
-            }
-          },
-          {
-            "id": "a6028b1c598e4c0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BackendLearn/八股.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "八股"
-            }
-          },
-          {
             "id": "d936ded14f196c58",
             "type": "leaf",
             "state": {
@@ -90,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "八股.md",
+                "file": "Excalidraw/ThreadLocal三种情况.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +145,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "八股 的反向链接列表"
+              "title": "ThreadLocal三种情况 的反向链接列表"
             }
           },
           {
@@ -209,13 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackendLearn/八股.md",
+                "file": "Excalidraw/ThreadLocal三种情况.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "八股 的大纲"
+              "title": "ThreadLocal三种情况 的大纲"
             }
           },
           {
@@ -242,8 +214,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -264,14 +235,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a6028b1c598e4c0a",
+  "active": "1a626b5b673a9aa0",
   "lastOpenFiles": [
-    "Excalidraw/ThreadLocal三种情况.md",
     "Java.md",
+    "BackendLearn/八股.md",
+    "Excalidraw/ThreadLocal三种情况.md",
     "未命名.md",
     "Excalidraw",
     "Pasted image 20250621231559.png",
-    "BackendLearn/八股.md",
     "BackendLearn/短链接.md",
     "Pasted image 20250621231404.png",
     "BackendLearn/杂记.md",
