@@ -53,12 +53,14 @@
             "id": "a6028b1c598e4c0a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/ThreadLocal三种情况.md"
+                "file": "BackendLearn/八股.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "ThreadLocal三种情况"
+              "icon": "lucide-file",
+              "title": "八股"
             }
           },
           {
@@ -207,13 +209,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/ThreadLocal三种情况.md",
+                "file": "BackendLearn/八股.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ThreadLocal三种情况 的大纲"
+              "title": "八股 的大纲"
             }
           },
           {
