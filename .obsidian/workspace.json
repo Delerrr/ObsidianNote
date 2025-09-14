@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "a2306ae70da1ca55",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.12"
-            }
-          },
-          {
             "id": "92ba8ad75ccad9f2",
             "type": "leaf",
             "state": {
@@ -45,8 +33,7 @@
               "title": "Java"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -103,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "dcc9654b68ca0905",
@@ -165,12 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Excalidraw/ThreadLocal三种情况.md",
                 "followCursor": false,
                 "showSearch": true,
-                "searchQuery": "堆"
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "ThreadLocal三种情况 的大纲"
             }
           },
           {
@@ -220,7 +209,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9dd93f58f8464a37",
+  "active": "2232ed75ecd44579",
   "lastOpenFiles": [
     "Java.md",
     "BackendLearn/八股.md",
