@@ -32,8 +32,21 @@
               "icon": "lucide-file",
               "title": "Java"
             }
+          },
+          {
+            "id": "cac45e0c4b8f81b8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.14"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -153,13 +166,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/ThreadLocal三种情况.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ThreadLocal三种情况 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -209,7 +221,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2232ed75ecd44579",
+  "active": "165bab4bca65880a",
   "lastOpenFiles": [
     "Java.md",
     "BackendLearn/八股.md",
