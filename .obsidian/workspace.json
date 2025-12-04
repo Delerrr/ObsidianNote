@@ -45,8 +45,7 @@
               "title": "版本说明 1.9.14"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,12 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Excalidraw/ThreadLocal三种情况.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "ThreadLocal三种情况 的大纲"
             }
           },
           {
@@ -221,11 +221,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "165bab4bca65880a",
+  "active": "d936ded14f196c58",
   "lastOpenFiles": [
+    "Excalidraw/ThreadLocal三种情况.md",
     "Java.md",
     "BackendLearn/八股.md",
-    "Excalidraw/ThreadLocal三种情况.md",
     "未命名.md",
     "Excalidraw",
     "Pasted image 20250621231559.png",
