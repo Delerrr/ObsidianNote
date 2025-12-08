@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d936ded14f196c58",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/ThreadLocal三种情况.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "ThreadLocal三种情况"
-            }
-          },
-          {
             "id": "92ba8ad75ccad9f2",
             "type": "leaf",
             "state": {
@@ -165,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/ThreadLocal三种情况.md",
+                "file": "Java.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ThreadLocal三种情况 的大纲"
+              "title": "Java 的大纲"
             }
           },
           {
@@ -221,7 +209,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d936ded14f196c58",
+  "active": "92ba8ad75ccad9f2",
   "lastOpenFiles": [
     "Excalidraw/ThreadLocal三种情况.md",
     "Java.md",
