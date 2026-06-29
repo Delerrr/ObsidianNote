@@ -4,49 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "54779335f3dc64e1",
+        "id": "b65be0b51321566e",
         "type": "tabs",
         "children": [
           {
-            "id": "92ba8ad75ccad9f2",
+            "id": "1dd8184f47c2272a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Java"
-            }
-          },
-          {
-            "id": "f37c9de2dccb4194",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.6"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.10.6"
-            }
-          },
-          {
-            "id": "cac45e0c4b8f81b8",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.14"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.14"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,10 +192,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cac45e0c4b8f81b8",
+  "active": "1dd8184f47c2272a",
   "lastOpenFiles": [
-    "Excalidraw/ThreadLocal三种情况.md",
     "Java.md",
+    "Excalidraw/ThreadLocal三种情况.md",
     "BackendLearn/八股.md",
     "未命名.md",
     "Excalidraw",
